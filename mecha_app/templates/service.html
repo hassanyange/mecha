@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <title>Mechaworld</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Mechaworld Company website" name="keywords">
+        <meta content="Mechaworld Company Website "  name="description">
+
+        <!-- Favicon -->
+        <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet"> 
+        <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/slick/slick.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/slick/slick-theme.css' %}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link rel="stylesheet" href="{%static  'css/style.css'%}">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Top Bar Start -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <h2>Mechaworld</h2>
+                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-calendar"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Opening Hour</h3>
+                                            <p>24hrs 7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Call Us</h3>
+                                            <p>+255685230096</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-send-mail"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Email Us</h3>
+                                            <p>mechaworld@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Service</a>
+                                <a href="team.html" class="nav-item nav-link">Team</a>
+                            
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="contact.html">Get A Quote</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+            <!-- Page Header Start -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Our Services</h2>
+                        </div>
+                        <div class="col-12">
+                            <a href="index.html">Home</a>
+                            <a href="service.html">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+            <!-- Service Start -->
+            <div class="service">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>What we do</p>
+                        <h2>Our Services</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="img/diagnostics.jpeg" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Car diagnostic tests scan your car's components and systems to check for issues with components like the engine, transmission, oil tank, throttle, and many more. Because car diagnostic tests require specific devices and expertise to read correctly, most tests are performed with mechanics
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Diagnostics</h3>
+                                    <a class="btn" href="img/diagnostics.jpeg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="img/batteries.jpg" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                           
+Car batteries are expensive components in your car. A good thing is the fact you can recondition them and end up with a new battery. The main fact you should know is that a reconditioned battery will have up to 70% of the power of a brand-new unit, but this is more than your car needs.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Batteries</h3>
+                                    <a class="btn" href="img/batteries.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="img/breaks.jpeg" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Brake repair is a vital safety issue. Without properly working brakes, normal driving situations would take a turn for the worst. However, there are other benefits in getting routine brake service and brake repair. Changing your brake pads, when needed, saves wear on your rotors, which translates into less money spent down the line.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Breaks</h3>
+                                    <a class="btn" href="img/breaks.jpeg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="img/engine.jpeg" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Engine repair</h3>
+                                    <a class="btn" href="img/engine.jpeg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="img/tires.jpeg" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Tires replacement</h3>
+                                    <a class="btn" href="img/tires.jpeg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="img/transmission.jpg" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Transimission</h3>
+                                    <a class="btn" href="img/transmission.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
+            
+           <!-- FAQs Start -->
+           <div class="faqs">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Frequently Asked Question</p>
+                    <h2>You May Ask</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="accordion-1">
+                            <div class="card wow fadeInLeft" data-wow-delay="0.1s">
+                                <div class="card-header">
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
+                                     
+                                        What is the Right Time to Get Your Car Battery Replaced?</a>
+                                </div>
+                                <div id="collapseOne" class="collapse" data-parent="#accordion-1">
+                                    <div class="card-body">
+                                        All these factors can cause a car battery to rapidly discharge which will make your car in-operational when you need it. So if you ever end up in such a situation with your car, there basically two options you can resort to:
+• Jump starting the car: for this, you need a jumper cable and a donor car whose battery you will use to charge your car. Place the positive and negative terminals of the jumper cable on the positive and negative terminal of the donor car battery respectively. Then start the donor car and let it run for a few minutes. After some time, your car battery would be charged enough for ignition and once it is done, try the ignition of your car. You’ll be good to go. Want to skip the hassle? Simply book a jumpstart service with GoMechanic and we will handle the situation for you. <br>
+• Charging the battery: if you have access to a mechanic in a situation of car battery discharge, then the best thing to do is get the battery removed and the mechanic will put it up on charging so that it can attain all the juice back. These practices can work a couple of times maybe but if your car battery isn’t responding even after trying both the things then you probably want to consider getting a new battery for your car.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card wow fadeInLeft" data-wow-delay="0.2s">
+                                <div class="card-header">
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
+                                        Squealing Brakes?
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
+                                    <div class="card-body">
+                                        Squealing brakes are unpleasant and way more unsafe. It is primarily caused by worn-off brake pads. Frequent over-speeding means the brakes are used more than usual and hence causes excessive wear of the brake pads.
+Ignoring squealing brakes is not good, as less responsive brakes can even lead to severe accidents. Hence as soon as you hear your brakes going all high pitched, get your brake pads replaced from your trusted car service .
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                                <div class="card-header">
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
+                                        Exhaust Smoke?
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="collapse" data-parent="#accordion-1">
+                                    <div class="card-body">
+                                        Unusual smoke from your car’s tailpipe isn’t good news and different colours of smoke depict a different story.
+• White or Grey Smoke: White smoke indicates that the coolant is being combusted along with the fuel and there is a leakage somewhere in the Engine block, cylinder head and head gasket. <br>
+• Blue Smoke: Blue smoke indicates that there is a leakage in the valve seals or guides or the piston rings have worn out, which are causing the engine oil to penetrate into the combustion chamber, which is causing the oil to burn along with the fuel. Hence Causing Blue Smoke    <br>
+• Black Smoke: This means that excessive fuel is being burnt in the combustion chambers due to a leak in the fuel injector, a stuck fuel pressure regulator or a restriction in the fuel combustion pipe. This usually happens with relatively older cars and in such situations, it is very crucial to get the leaks checked from a specialized mechanic.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card wow fadeInLeft" data-wow-delay="0.4s">
+                                <div class="card-header">
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
+                                        Engine Overheating?
+                                    </a>
+                                </div>
+                                <div id="collapseFour" class="collapse" data-parent="#accordion-1">
+                                    <div class="card-body">
+                                        The process of combusting power out of an engine is piping hot and in order to keep the heat optimum for efficient combustion, components like radiators are there at the engines disposal.
+So while driving if your car’s temp gauge goes all red and your car’s engine is overheating unusually then it is certain that there’s something wrong with your car’s cooling system.
+Must Read: Engine Oil | A Comprehensive Guide | Everything You Need To Know
+The most common problem for engine overheating might be the low coolant level. Your car’s regular service always includes a coolant top-up, so the main reason for low coolant is irregular servicing of your car.
+So if your car is constantly overheating, do check for the coolant levels and keep it up to the mark
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card wow fadeInLeft" data-wow-delay="0.5s">
+                                <div class="card-header">
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
+                                        Uneven tyre wear?
+                                    </a>
+                                </div>
+                                <div id="collapseFive" class="collapse" data-parent="#accordion-1">
+                                    <div class="card-body">
+                                        After a significant number of daily drives and road trips, you begin to notice an unusual tyre wear i.e the tread wear of a particular tyre does not match with the rest of the tyres. This means that you need to get wheel balancing done on an immediate basis. Interestingly, the front tyres of a car are more prone to uneven tyre wear as they experience more pressure and weight offset.
+
+Related: Wheel Alignment, Wheel Balancing, and Tyre Rotation Explained
+
+Hence, the most effective solution for uneven tyre wear is getting your wheels balanced or to switch the affected tyre with the spare one to prevent any mishaps.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="accordion-2">
+                            <div class="card wow fadeInRight" data-wow-delay="0.1s">
+                                <div class="card-header">
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
+                                        Car pulling on one side?
+                                    </a>
+                                </div>
+                                <div id="collapseSix" class="collapse" data-parent="#accordion-2">
+                                    <div class="card-body">
+                                        You’re out on the highway or you’re simply coming back from the office and while driving your car in a straight line for some time you realise that your car is throwing itself to the guardrail and you have to put in extra effort to keep your car straight-lined. This can be a very panicky situation for a novice driver.
+ 
+                                        But not to worry, nothing terrible has happened to your car, it’s just that your car is out of alignment i.e all four wheels aren’t pointing in a linear manner and they are off their usual angle with the road while moving. The solution to this you ask? Get your car’s Wheel Alignment done. Tyre experts at GoMechanic with the help of computer-aided systems can align your car tyres back in no time.
+                                        Wheel alignment is recommended to be checked after every 6,000-8,000 kms to avoid any major damage to the wheels or the suspension of the car.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card wow fadeInRight" data-wow-delay="0.2s">
+                                <div class="card-header">
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
+                                        Dead or Discharged Battery?
+                                    </a>
+                                </div>
+                                <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
+                                    <div class="card-body">
+                                        A dead or discharged battery is a very common car problem reported. There are plenty of reasons for your car battery to doze off like leaving electricals on when not in use, faulty charging, parasitic drain, defective alternator if the battery is beginning to show its age and the one which is the COVID-19 Lockdown special is leaving the car unused for a long time.
+                                        Suggested: What is the Right Time to Get Your Car Battery Replaced?
+                                        All these factors can cause a car battery to rapidly discharge which will make your car in-operational when you need it. So if you ever end up in such a situation with your car, there basically two options you can resort to:
+                                            • Jump starting the car: for this, you need a jumper cable and a donor car whose battery you will use to charge your car. Place the positive and negative terminals of the jumper cable on the positive and negative terminal of the donor car battery respectively. Then start the donor car and let it run for a few minutes. After some time, your car battery would be charged enough for ignition and once it is done, try the ignition of your car. You’ll be good to go. Want to skip the hassle? Simply book a jumpstart service with GoMechanic and we will handle the situation for you.
+                                            • Charging the battery: if you have access to a mechanic in a situation of car battery discharge, then the best thing to do is get the battery removed and the mechanic will put it up on charging so that it can attain all the juice back. These practices can work a couple of times maybe but if your car battery isn’t responding even after trying both the things then you probably want to consider getting a new battery for your car.
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                                <div class="card-header">
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
+                                        Why does my “check engine” light come on?
+                                    </a>
+                                </div>
+                                <div id="collapseEight" class="collapse" data-parent="#accordion-2">
+                                    <div class="card-body">
+                                        One of the common reasons your check engine light comes on has an easy (and free) solution. If your gas cap wasn’t put on tightly the last time you filled the tank, it can affect the pressure in the fuel-delivery system — and that triggers the check engine warning. Try tightening your gas cap first. If that doesn’t work, see your mechanic; it could be anything from a failing catalytic converter to faulty spark plugs to an oxygen sensor failure.[1] Because this light could indicate a number of different problems, it’s easiest to have your mechanic diagnose the issue.   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card wow fadeInRight" data-wow-delay="0.4s">
+                                <div class="card-header">
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
+                                        What is the correct tire pressure for me — and how often should I check it??
+                                    </a>
+                                </div>
+                                <div id="collapseNine" class="collapse" data-parent="#accordion-2">
+                                    <div class="card-body">
+                                        The correct tire pressure varies from one car to the next. It’s important to know what your car requires because tire pressure can affect the safety and performance of your vehicle. You can find the manufacturer’s recommended tire pressure on a sticker that’s usually on the doorjamb of the driver’s side. Always follow that number, not the maximum pounds per square inch (psi) number listed on the side of the tire itself.[2] Check the pressure at least monthly, or every time you fuel up.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card wow fadeInRight" data-wow-delay="0.5s">
+                                <div class="card-header">
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
+                                        Do I have to have my car serviced by the dealership to have it covered by my warranty?
+                                    </a>
+                                </div>
+                                <div id="collapseTen" class="collapse" data-parent="#accordion-2">
+                                    <div class="card-body">
+                                        The warranty on your car is good regardless of where you have it serviced. However, if you have car maintenance tasks, such as oil changes and tire rotations, performed somewhere other than the dealership, make sure you keep a record of when and where the work was done. Keep the receipts, too. If you have proof that the work was done, the dealership or automaker should honor the warranty.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQs End -->
+
+            
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+        <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+        <script src="{% static 'lib/slick/slick.min.js' %}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>

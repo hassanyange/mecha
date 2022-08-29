@@ -1,0 +1,840 @@
+   
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mechaworld</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Mechaworld Company website" name="keywords">
+        <meta content="Mechaworld Company Website "  name="description">
+        {% load static %}  
+        <!-- Favicon -->
+        <link href="{% static 'img/favicon.ico' %}" rel="icon">
+       
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet"> 
+        <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/slick/slick.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/slick/slick-theme.css' %}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link rel="stylesheet" href="{%static  'css/style.css'%}">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Top Bar Start -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                <a href="{% static 'home-return' %}">
+                                    <h2>Mechaworld</h2>
+                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-calendar"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Opening Hour</h3>
+                                            <p>24hrs 7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Call Us</h3>
+                                            <p>+255685230096</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-send-mail"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Email Us</h3>
+                                            <p>mechaworld@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="{% static 'home-return' %}" class="nav-item nav-link active">Home</a>
+                                <a href="{% static 'about-return' %}"class="nav-item nav-link ">About</a>
+                                <a href="{% static 'service-return' %}"class="nav-item nav-link">Service</a>
+                                <a href="{% static 'team-return' %}" class="nav-item nav-link">Team</a>
+                             
+                                <a href="{% static 'contact-return' %}" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="{% static 'contact-return' %}">Get A Quote</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+
+
+            <!-- Carousel Start -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'img/Carousel-1.jpeg' %}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight">We Are Professional</p>
+                            <h1 class="animated fadeInLeft">For Your Car problem</h1>
+                            <a class="btn animated fadeInUp" href="contact.html">Get A Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="{% static 'img/Carousel-2.jpg' %}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight">Professional Mechaworld</p>
+                            <h1 class="animated fadeInLeft">We treat your car problem</h1>
+                            <a class="btn animated fadeInUp" href="contact.html">Get A Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="{% static 'img/Carousel-3.jpg' %}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight">We Are Trusted</p>
+                            <h1 class="animated fadeInLeft">For Your Car</h1>
+                            <a class="btn animated fadeInUp" href="contact.html">Get A Quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Carousel End -->
+
+
+            <!-- Feature Start-->
+            <div class="feature wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="flaticon-worker"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Expert Worker</h3>
+                                    <p>We have large and enough number of experties to help you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="flaticon-building"></i>
+                                    <!-- <i class="fi fi-br-car-garage"></i> -->
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Quality Work</h3>
+                                    <p>Welcome mechaworld company for good and quality service</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="flaticon-call"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>24/7 Support</h3>
+                                    <p>Call us anytime we will respond </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature End-->
+
+
+            <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <img src="{% static 'img/abt.jpg' %}" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header text-left">
+                                <p>Welcome to Mechaworld</p>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    MECHAWORLD MISSION IS TO MAKE EASY TO DO CAR SERVICES ALL OVER THE WORLD                  THROUGH INTERNET.
+
+                                    At Mechaworld company L.T.D, we want to solve the biggest problem in vehicles by providing the best car services all over the world through internet in everyone is guessing.
+                                    Our business is established in Tanzania, we expect after few year we will enter in the international business. We want all vehicles owners to request to AutoJet anywhere in order for us to provide best services for their vehicles..
+                                </p>
+                                <p>
+                                    MECHAWORLD WAS CURRENTLY FOUNDED IN 2022 BY 3 PEOPLE LED BY JANUARY M CHIBERT, a currently student at NIT in Tanzania, Our founders started our company to help small garage, large garage, and self employed mechanic, we do this by believing in internet to connect them in the same place in order for our customer to request easily.
+                                </p>
+                                <a class="btn" href="{% static 'contact-return' %}">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+
+
+            <!-- Fact Start -->
+            <div class="fact">
+                <div class="container-fluid">
+                    <div class="row counters">
+                        <div class="col-md-6 fact-left wow slideInLeft">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="fact-icon">
+                                        <i class="flaticon-worker"></i>
+                                    </div>
+                                    <div class="fact-text">
+                                        <h2 data-toggle="counter-up">109</h2>
+                                        <p>Expert Workers</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="fact-icon">
+                                        <i class="flaticon-building"></i>
+                                    </div>
+                                    <div class="fact-text">
+                                        <h2 data-toggle="counter-up">485</h2>
+                                        <p>Happy Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 fact-right wow slideInRight">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="fact-icon">
+                                        <i class="flaticon-address"></i>
+                                    </div>
+                                    <div class="fact-text">
+                                        <h2 data-toggle="counter-up">538</h2>
+                                        <p>Completed works</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="fact-icon">
+                                        <i class="flaticon-crane"></i>
+                                    </div>
+                                    <div class="fact-text">
+                                        <h2 data-toggle="counter-up">499</h2>
+                                        <p>Running Projects</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Fact End -->
+
+
+            <!-- Service Start -->
+            <div class="service">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>What we do</p>
+                        <h2>Our Services</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static 'img/diagnostics.jpeg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Car diagnostic tests scan your car's components and systems to check for issues with components like the engine, transmission, oil tank, throttle, and many more. Because car diagnostic tests require specific devices and expertise to read correctly, most tests are performed with mechanics
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Diagnostics</h3>
+                                    <a class="btn" href="{% static 'img/diagnostics.jpeg' %}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static 'img/batteries.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                           
+Car batteries are expensive components in your car. A good thing is the fact you can recondition them and end up with a new battery. The main fact you should know is that a reconditioned battery will have up to 70% of the power of a brand-new unit, but this is more than your car needs.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Batteries</h3>
+                                    <a class="btn" href="{% static 'img/batteries.jpg' %}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static 'img/breaks.jpeg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Brake repair is a vital safety issue. Without properly working brakes, normal driving situations would take a turn for the worst. However, there are other benefits in getting routine brake service and brake repair. Changing your brake pads, when needed, saves wear on your rotors, which translates into less money spent down the line.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Breaks</h3>
+                                    <a class="btn" href="{% static 'img/breaks.jpeg' %}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static 'img/engine.jpeg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            
+                                        Major automobile repair means the repair or replacement of frames and bodies, including painting, of vehicles of all weights and sizes, and the repair or replacement of engines, transmissions, power trains and wheels of vehicles exceeding one-and-one-half-ton capacity.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Engine repair</h3>
+                                    <a class="btn" href="{% static 'img/engine.jpe' %}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static 'img/tires.jpeg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            
+                                         Every brand-new vehicle is delivered from the manufacturer with a set of new tires. These tires are often referred to as the Original Equipment tires, or “OE” tires for short. When those tires wear out, you can choose to replace them with the same tire, or a replacement tire that also fits your vehicle..
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Tires replacement</h3>
+                                    <a class="btn" href="{% static 'img/tires.jpeg' %}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static 'img/transmission.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            A transmission service is a regular part of routine car maintenance, just like an oil change. The primary aspect of a transmission service is flushing out the old transmission fluid and replacing it with new fluid.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Transimission</h3>
+                                    <a class="btn" href="{% static 'img/transmission.jpg' %}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
+
+
+            <!-- Video Start -->
+            <div class="video wow fadeIn" data-wow-delay="0.1s">
+                <div class="container">
+                    <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>        
+                            <!-- 16:9 aspect ratio -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://youtu.be/5mZjNaG137k" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Video End -->
+
+
+            <!-- Team Start -->
+            <div class="team">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Our Team</p>
+                        <h2>Meet Our Experties</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{% static 'img/team-1.jpg' %}" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>January</h2>
+                                    <p>CEO & Founder</p>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                
+                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{% static 'img/team-2.jpg' %}" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Yange</h2>
+                                    <p>Web Developer</p>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                
+                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{% static 'img/team-3.jpg' %}" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Julius</h2>
+                                    <p>Web Designer</p>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                            
+                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{% static 'img/team-4.jpg' %}" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>juven <h2>
+                                    <p>Graphics Designer</p>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                
+                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team End -->
+            
+
+            <!-- FAQs Start -->
+            <div class="faqs">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Frequently Asked Question</p>
+                        <h2>You May Ask</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="accordion-1">
+                                <div class="card wow fadeInLeft" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
+                                         
+                                            What is the Right Time to Get Your Car Battery Replaced?</a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            All these factors can cause a car battery to rapidly discharge which will make your car in-operational when you need it. So if you ever end up in such a situation with your car, there basically two options you can resort to:
+    • Jump starting the car: for this, you need a jumper cable and a donor car whose battery you will use to charge your car. Place the positive and negative terminals of the jumper cable on the positive and negative terminal of the donor car battery respectively. Then start the donor car and let it run for a few minutes. After some time, your car battery would be charged enough for ignition and once it is done, try the ignition of your car. You’ll be good to go. Want to skip the hassle? Simply book a jumpstart service with GoMechanic and we will handle the situation for you. <br>
+    • Charging the battery: if you have access to a mechanic in a situation of car battery discharge, then the best thing to do is get the battery removed and the mechanic will put it up on charging so that it can attain all the juice back. These practices can work a couple of times maybe but if your car battery isn’t responding even after trying both the things then you probably want to consider getting a new battery for your car.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
+                                            Squealing Brakes?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Squealing brakes are unpleasant and way more unsafe. It is primarily caused by worn-off brake pads. Frequent over-speeding means the brakes are used more than usual and hence causes excessive wear of the brake pads.
+Ignoring squealing brakes is not good, as less responsive brakes can even lead to severe accidents. Hence as soon as you hear your brakes going all high pitched, get your brake pads replaced from your trusted car service .
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
+                                            Exhaust Smoke?
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Unusual smoke from your car’s tailpipe isn’t good news and different colours of smoke depict a different story.
+    • White or Grey Smoke: White smoke indicates that the coolant is being combusted along with the fuel and there is a leakage somewhere in the Engine block, cylinder head and head gasket. <br>
+    • Blue Smoke: Blue smoke indicates that there is a leakage in the valve seals or guides or the piston rings have worn out, which are causing the engine oil to penetrate into the combustion chamber, which is causing the oil to burn along with the fuel. Hence Causing Blue Smoke    <br>
+    • Black Smoke: This means that excessive fuel is being burnt in the combustion chambers due to a leak in the fuel injector, a stuck fuel pressure regulator or a restriction in the fuel combustion pipe. This usually happens with relatively older cars and in such situations, it is very crucial to get the leaks checked from a specialized mechanic.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.4s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
+                                            Engine Overheating?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            The process of combusting power out of an engine is piping hot and in order to keep the heat optimum for efficient combustion, components like radiators are there at the engines disposal.
+So while driving if your car’s temp gauge goes all red and your car’s engine is overheating unusually then it is certain that there’s something wrong with your car’s cooling system.
+Must Read: Engine Oil | A Comprehensive Guide | Everything You Need To Know
+The most common problem for engine overheating might be the low coolant level. Your car’s regular service always includes a coolant top-up, so the main reason for low coolant is irregular servicing of your car.
+So if your car is constantly overheating, do check for the coolant levels and keep it up to the mark
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.5s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
+                                            Uneven tyre wear?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            After a significant number of daily drives and road trips, you begin to notice an unusual tyre wear i.e the tread wear of a particular tyre does not match with the rest of the tyres. This means that you need to get wheel balancing done on an immediate basis. Interestingly, the front tyres of a car are more prone to uneven tyre wear as they experience more pressure and weight offset.
+
+Related: Wheel Alignment, Wheel Balancing, and Tyre Rotation Explained
+
+Hence, the most effective solution for uneven tyre wear is getting your wheels balanced or to switch the affected tyre with the spare one to prevent any mishaps.
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="accordion-2">
+                                <div class="card wow fadeInRight" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
+                                            Car pulling on one side?
+                                        </a>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            You’re out on the highway or you’re simply coming back from the office and while driving your car in a straight line for some time you realise that your car is throwing itself to the guardrail and you have to put in extra effort to keep your car straight-lined. This can be a very panicky situation for a novice driver.
+ 
+                                            But not to worry, nothing terrible has happened to your car, it’s just that your car is out of alignment i.e all four wheels aren’t pointing in a linear manner and they are off their usual angle with the road while moving. The solution to this you ask? Get your car’s Wheel Alignment done. Tyre experts at GoMechanic with the help of computer-aided systems can align your car tyres back in no time.
+                                            Wheel alignment is recommended to be checked after every 6,000-8,000 kms to avoid any major damage to the wheels or the suspension of the car.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
+                                            Dead or Discharged Battery?
+                                        </a>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            A dead or discharged battery is a very common car problem reported. There are plenty of reasons for your car battery to doze off like leaving electricals on when not in use, faulty charging, parasitic drain, defective alternator if the battery is beginning to show its age and the one which is the COVID-19 Lockdown special is leaving the car unused for a long time.
+                                            Suggested: What is the Right Time to Get Your Car Battery Replaced?
+                                            All these factors can cause a car battery to rapidly discharge which will make your car in-operational when you need it. So if you ever end up in such a situation with your car, there basically two options you can resort to:
+                                                • Jump starting the car: for this, you need a jumper cable and a donor car whose battery you will use to charge your car. Place the positive and negative terminals of the jumper cable on the positive and negative terminal of the donor car battery respectively. Then start the donor car and let it run for a few minutes. After some time, your car battery would be charged enough for ignition and once it is done, try the ignition of your car. You’ll be good to go. Want to skip the hassle? Simply book a jumpstart service with GoMechanic and we will handle the situation for you.
+                                                • Charging the battery: if you have access to a mechanic in a situation of car battery discharge, then the best thing to do is get the battery removed and the mechanic will put it up on charging so that it can attain all the juice back. These practices can work a couple of times maybe but if your car battery isn’t responding even after trying both the things then you probably want to consider getting a new battery for your car.
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
+                                            Why does my “check engine” light come on?
+                                        </a>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            One of the common reasons your check engine light comes on has an easy (and free) solution. If your gas cap wasn’t put on tightly the last time you filled the tank, it can affect the pressure in the fuel-delivery system — and that triggers the check engine warning. Try tightening your gas cap first. If that doesn’t work, see your mechanic; it could be anything from a failing catalytic converter to faulty spark plugs to an oxygen sensor failure.[1] Because this light could indicate a number of different problems, it’s easiest to have your mechanic diagnose the issue.   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.4s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
+                                            What is the correct tire pressure for me — and how often should I check it??
+                                        </a>
+                                    </div>
+                                    <div id="collapseNine" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            The correct tire pressure varies from one car to the next. It’s important to know what your car requires because tire pressure can affect the safety and performance of your vehicle. You can find the manufacturer’s recommended tire pressure on a sticker that’s usually on the doorjamb of the driver’s side. Always follow that number, not the maximum pounds per square inch (psi) number listed on the side of the tire itself.[2] Check the pressure at least monthly, or every time you fuel up.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.5s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
+                                            Do I have to have my car serviced by the dealership to have it covered by my warranty?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTen" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            The warranty on your car is good regardless of where you have it serviced. However, if you have car maintenance tasks, such as oil changes and tire rotations, performed somewhere other than the dealership, make sure you keep a record of when and where the work was done. Keep the receipts, too. If you have proof that the work was done, the dealership or automaker should honor the warranty.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQs End -->
+
+            <!-- Testimonial Start -->
+            <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="testimonial-slider-nav">
+                                <div class="slider-nav"><img src="{% static 'img/testimonial-1.jpg' %}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{% static 'img/testimonial-2.jpg' %}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{% static 'img/testimonial-3.jpg' %}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{% static 'img/testimonial-4.jpg' %}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{% static 'img/testimonial-5.jpg' %}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{% static 'img/testimonial-6.jpg' %}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{% static 'img/testimonial-7.jpg' %}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{% static 'img/testimonial-8.jpg' %}" alt="Testimonial"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="testimonial-slider">
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial End -->
+            
+            <!-- Footer Start -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>Office Contact</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>Mabibo,Dar es salaam</p>
+                                <p><i class="fa fa-phone-alt"></i>+255685230096</p>
+                                <p><i class="fa fa-envelope"></i>mechaworld@gmai.com</p>
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Services </h2>
+                                <a href="{% static 'service-return' %}">Diagnostics</a>
+                                <a href="{% static 'service-return' %}">Breaks</a>
+                                <a href="{% static 'service-return' %}">Batteries</a>
+                                <a href="{% static 'service-return' %}">Engine repair</a>
+                                <a href="{% static 'service-return' %}">Tires replacement</a>
+                                <a href="{% static 'service-return' %}">transmission</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="{% static 'about-return' %}">About Us</a>
+                                <a href="{% static 'contact-return' %}">Contact Us</a>
+                                <a href="{% static 'team-return' %}">Our Team</a>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>Newsletter</h2>
+                                <p>
+                                You can contact us here below by using email
+                                </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Email here">
+                                    <button class="btn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="{% static 'contact-return' %}">Help</a>
+                        <a href="{% static 'team-return' %}">FQAs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="contact.html">Mechaworld</a>, All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed By <a href="https://yange-portifolio.netlify.app">Yange master</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+        <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+        <script src="{% static 'lib/slick/slick.min.js' %}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
