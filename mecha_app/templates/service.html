@@ -36,7 +36,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="{% static 'home-return' %}">
                                     <h2>Mechaworld</h2>
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
@@ -95,15 +95,15 @@
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
-                                <a href="index.html" class="nav-item nav-link active">Home</a>
-                                <a href="about.html" class="nav-item nav-link">About</a>
-                                <a href="service.html" class="nav-item nav-link">Service</a>
-                                <a href="team.html" class="nav-item nav-link">Team</a>
+                                <a href="{% static 'home-return' %}" class="nav-item nav-link active">Home</a>
+                                <a href="{% static 'about-return' %}"class="nav-item nav-link">About</a>
+                                <a href="{% static 'service-return' %}" class="nav-item nav-link">Service</a>
+                                <a href="{% static 'team-return' %}"class="nav-item nav-link">Team</a>
                             
-                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                <a href="{% static 'contact-return' %}"class="nav-item nav-link">Contact</a>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="contact.html">Get A Quote</a>
+                                <a class="btn" href="{% static 'contact-return' %}">Get A Quote</a>
                             </div>
                         </div>
                     </nav>
@@ -118,8 +118,8 @@
                             <h2>Our Services</h2>
                         </div>
                         <div class="col-12">
-                            <a href="index.html">Home</a>
-                            <a href="service.html">Our Services</a>
+                            <a href="{% static 'home-return' %}">Home</a>
+                            <a href="{% static 'service-return' %}">Our Services</a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/diagnostics.jpeg" alt="Image">
+                                    <img src='{% static"img/diagnostics.jpeg" %}' alt="Image">
                                     <div class="service-overlay">
                                         <p>
                                             Car diagnostic tests scan your car's components and systems to check for issues with components like the engine, transmission, oil tank, throttle, and many more. Because car diagnostic tests require specific devices and expertise to read correctly, most tests are performed with mechanics
@@ -146,14 +146,14 @@
                                 </div>
                                 <div class="service-text">
                                     <h3>Diagnostics</h3>
-                                    <a class="btn" href="img/diagnostics.jpeg" data-lightbox="service">+</a>
+                                    <a class="btn" href='{% static "img/diagnostics.jpeg" %}' data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/batteries.jpg" alt="Image">
+                                    <img src='{% static "img/batteries.jpg" %}' alt="Image">
                                     <div class="service-overlay">
                                         <p>
                                            
@@ -163,14 +163,14 @@ Car batteries are expensive components in your car. A good thing is the fact you
                                 </div>
                                 <div class="service-text">
                                     <h3>Batteries</h3>
-                                    <a class="btn" href="img/batteries.jpg" data-lightbox="service">+</a>
+                                    <a class="btn" href='{% static "img/batteries.jpg" %}' data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/breaks.jpeg" alt="Image">
+                                    <img src='{% static "img/breaks.jpeg"  %}' alt="Image">
                                     <div class="service-overlay">
                                         <p>
                                             Brake repair is a vital safety issue. Without properly working brakes, normal driving situations would take a turn for the worst. However, there are other benefits in getting routine brake service and brake repair. Changing your brake pads, when needed, saves wear on your rotors, which translates into less money spent down the line.
@@ -179,14 +179,14 @@ Car batteries are expensive components in your car. A good thing is the fact you
                                 </div>
                                 <div class="service-text">
                                     <h3>Breaks</h3>
-                                    <a class="btn" href="img/breaks.jpeg" data-lightbox="service">+</a>
+                                    <a class="btn" href= "{% static 'img/breaks.jpeg' %}" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/engine.jpeg" alt="Image">
+                                    <img src='{% static "img/engine.jpeg" %}' alt="Image">
                                     <div class="service-overlay">
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
@@ -195,14 +195,14 @@ Car batteries are expensive components in your car. A good thing is the fact you
                                 </div>
                                 <div class="service-text">
                                     <h3>Engine repair</h3>
-                                    <a class="btn" href="img/engine.jpeg" data-lightbox="service">+</a>
+                                    <a class="btn" href= '{% static "img/engine.jpeg" %}' data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/tires.jpeg" alt="Image">
+                                    <img src="{% static 'img/tires.jpeg' %}" alt="Image">
                                     <div class="service-overlay">
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
@@ -211,14 +211,14 @@ Car batteries are expensive components in your car. A good thing is the fact you
                                 </div>
                                 <div class="service-text">
                                     <h3>Tires replacement</h3>
-                                    <a class="btn" href="img/tires.jpeg" data-lightbox="service">+</a>
+                                    <a class="btn" href="{% static 'img/tires.jpeg' %}" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/transmission.jpg" alt="Image">
+                                    <img src="{% static 'img/transmission.jpg' %}" alt="Image">
                                     <div class="service-overlay">
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
@@ -227,7 +227,7 @@ Car batteries are expensive components in your car. A good thing is the fact you
                                 </div>
                                 <div class="service-text">
                                     <h3>Transimission</h3>
-                                    <a class="btn" href="img/transmission.jpg" data-lightbox="service">+</a>
+                                    <a class="btn" href="{% static 'img/transmission.jpg' %}" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
