@@ -95,15 +95,15 @@
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
-                                <a href="{% static 'home-return' %}" class="nav-item nav-link active">Home</a>
-                                <a href="{% static 'about-return' %}"class="nav-item nav-link ">About</a>
-                                <a href="{% static 'service-return' %}"class="nav-item nav-link">Service</a>
-                                <a href="{% static 'team-return' %}" class="nav-item nav-link">Team</a>
+                                <a href="{% url 'home-return' %}" class="nav-item nav-link active">Home</a>
+                                <a href="{% url 'about-return' %}"class="nav-item nav-link ">About</a>
+                                <a href="{% url 'service-return' %}"class="nav-item nav-link">Service</a>
+                                <a href="{% url 'team-return' %}" class="nav-item nav-link">Team</a>
                              
-                                <a href="{% static 'contact-return' %}" class="nav-item nav-link">Contact</a>
+                                <a href="{% url 'contact-return' %}" class="nav-item nav-link">Contact</a>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="{% static 'contact-return' %}">Get A Quote</a>
+                                <a class="btn" href="{% url 'contact-return' %}">Get A Quote</a>
                             </div>
                         </div>
                     </nav>
@@ -143,7 +143,7 @@
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">We Are Trusted</p>
                             <h1 class="animated fadeInLeft">For Your Car</h1>
-                            <a class="btn animated fadeInUp" href="contact.html">Get A Quote</a>
+                            <a class="btn animated fadeInUp" href='{% url "contact-return" %}'>Get A Quote</a>
                         </div>
                     </div>
                 </div>
@@ -227,7 +227,7 @@
                                 <p>
                                     MECHAWORLD WAS CURRENTLY FOUNDED IN 2022 BY 3 PEOPLE LED BY JANUARY M CHIBERT, a currently student at NIT in Tanzania, Our founders started our company to help small garage, large garage, and self employed mechanic, we do this by believing in internet to connect them in the same place in order for our customer to request easily.
                                 </p>
-                                <a class="btn" href="{% static 'contact-return' %}">Learn More</a>
+                                <a class="btn" href="{% url 'contact-return' %}">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -765,20 +765,20 @@ Hence, the most effective solution for uneven tyre wear is getting your wheels b
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Services </h2>
-                                <a href="{% static 'service-return' %}">Diagnostics</a>
-                                <a href="{% static 'service-return' %}">Breaks</a>
-                                <a href="{% static 'service-return' %}">Batteries</a>
-                                <a href="{% static 'service-return' %}">Engine repair</a>
-                                <a href="{% static 'service-return' %}">Tires replacement</a>
-                                <a href="{% static 'service-return' %}">transmission</a>
+                                <a href="{% url 'service-return' %}">Diagnostics</a>
+                                <a href="{% url 'service-return' %}">Breaks</a>
+                                <a href="{% url 'service-return' %}">Batteries</a>
+                                <a href="{% url 'service-return' %}">Engine repair</a>
+                                <a href="{% url 'service-return' %}">Tires replacement</a>
+                                <a href="{% url 'service-return' %}">transmission</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Useful Pages</h2>
-                                <a href="{% static 'about-return' %}">About Us</a>
-                                <a href="{% static 'contact-return' %}">Contact Us</a>
-                                <a href="{% static 'team-return' %}">Our Team</a>
+                                <a href="{% url 'about-return' %}">About Us</a>
+                                <a href="{% url 'contact-return' %}">Contact Us</a>
+                                <a href="{% url 'team-return' %}">Our Team</a>
                                 
                                 
                             </div>
@@ -802,8 +802,8 @@ Hence, the most effective solution for uneven tyre wear is getting your wheels b
                         <a href="">Terms of use</a>
                         <a href="">Privacy policy</a>
                         <a href="">Cookies</a>
-                        <a href="{% static 'contact-return' %}">Help</a>
-                        <a href="{% static 'team-return' %}">FQAs</a>
+                        <a href="{% url 'contact-return' %}">Help</a>
+                        <a href="{% url 'team-return' %}">FQAs</a>
                     </div>
                 </div>
                 <div class="container copyright">

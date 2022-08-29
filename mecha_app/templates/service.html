@@ -95,36 +95,37 @@
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
-                                <a href="{% static 'home-return' %}" class="nav-item nav-link active">Home</a>
-                                <a href="{% static 'about-return' %}"class="nav-item nav-link">About</a>
-                                <a href="{% static 'service-return' %}" class="nav-item nav-link">Service</a>
-                                <a href="{% static 'team-return' %}"class="nav-item nav-link">Team</a>
+                                <a href="{% url 'home-return' %}" class="nav-item nav-link active">Home</a>
+                                <a href="{% url 'about-return' %}"class="nav-item nav-link">About</a>
+                                <a href="{% url 'service-return' %}" class="nav-item nav-link">Service</a>
+                                <a href="{% url 'team-return' %}"class="nav-item nav-link">Team</a>
                             
-                                <a href="{% static 'contact-return' %}"class="nav-item nav-link">Contact</a>
+                                <a href="{% url 'contact-return' %}"class="nav-item nav-link">Contact</a>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="{% static 'contact-return' %}">Get A Quote</a>
+                                <a class="btn" href="{% url 'contact-return' %}">Get A Quote</a>
                             </div>
                         </div>
                     </nav>
                 </div>
             </div>
             <!-- Nav Bar End -->
-            <!-- Page Header Start -->
-            <div class="page-header">
+              <!-- Page Header Start -->
+              <div class="page-header">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <h2>Our Services</h2>
                         </div>
                         <div class="col-12">
-                            <a href="{% static 'home-return' %}">Home</a>
-                            <a href="{% static 'service-return' %}">Our Services</a>
+                            <a href="index.html">Home</a>
+                            <a href="service.html">Our Services</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Page Header End -->
+            
 
             <!-- Service Start -->
             <div class="service">
@@ -137,7 +138,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src='{% static"img/diagnostics.jpeg" %}' alt="Image">
+                                    <img src='{% static "img/diagnostics.jpeg" %}' alt="Image">
                                     <div class="service-overlay">
                                         <p>
                                             Car diagnostic tests scan your car's components and systems to check for issues with components like the engine, transmission, oil tank, throttle, and many more. Because car diagnostic tests require specific devices and expertise to read correctly, most tests are performed with mechanics
