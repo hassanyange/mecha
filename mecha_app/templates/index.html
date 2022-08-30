@@ -789,10 +789,12 @@ Hence, the most effective solution for uneven tyre wear is getting your wheels b
                                 <p>
                                 You can contact us here below by using email
                                 </p>
-                                <div class="form">
-                                    <input class="form-control" placeholder="Email here">
-                                    <button class="btn">Submit</button>
-                                </div>
+                                <form action="" method="POST">{% csrf_token %}
+                                    <div class="form">
+                                        <input name= 'email' class="form-control" placeholder="Email here">
+                                        <button class="btn">Submit</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

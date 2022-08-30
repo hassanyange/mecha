@@ -1,9 +1,9 @@
-import email
-from unicodedata import name
+
+
 from django.shortcuts import render
 
 # Create your views here.
-from .models import userForm
+from .models import userEmail, userForm
 
 def about(request):
     return render(request, 'about.html')
@@ -12,6 +12,11 @@ def service(request):
 def team(request):
     return render(request, 'team.html')
 def homepage(request):
+    if request.method == 'POST':
+        user_email = request.POST['email']
+
+        user_input = userEmail(email= user_email)
+        user_input.save()
     return render(request, 'index.html')
 def contact(request):
     if request.method == 'POST':
