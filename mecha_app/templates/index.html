@@ -407,7 +407,7 @@ Car batteries are expensive components in your car. A good thing is the fact you
             <!-- Video Start -->
             <div class="video wow fadeIn" data-wow-delay="0.1s">
                 <div class="container">
-                    <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                    <button type="button" class="btn-play" data-toggle="modal" data-src= "https://www.youtube.com/watch?v=E81ujY3Sj_U" data-target="#videoModal">
                         <span></span>
                     </button>
                 </div>
@@ -678,7 +678,7 @@ Hence, the most effective solution for uneven tyre wear is getting your wheels b
             <!-- FAQs End -->
 
             <!-- Testimonial Start -->
-            <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
+            <!-- <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -741,7 +741,8 @@ Hence, the most effective solution for uneven tyre wear is getting your wheels b
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
             <!-- Testimonial End -->
             
             <!-- Footer Start -->
@@ -789,12 +790,12 @@ Hence, the most effective solution for uneven tyre wear is getting your wheels b
                                 <p>
                                 You can contact us here below by using email
                                 </p>
-                                <form action="" method="POST">{% csrf_token %}
+                             
                                     <div class="form">
-                                        <input name= 'email' class="form-control" placeholder="Email here">
-                                        <button class="btn">Submit</button>
+                                        
+                                        <button class="btn">  <a href="mailto:hassanyange@gmail.com">Contact  us</a></button>
                                     </div>
-                                </form>
+                            
                             </div>
                         </div>
                     </div>
@@ -838,5 +839,7 @@ Hence, the most effective solution for uneven tyre wear is getting your wheels b
 
         <!-- Template Javascript -->
         <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/contact.js' %}"></script>
+
     </body>
 </html>

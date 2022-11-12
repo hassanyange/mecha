@@ -12,10 +12,5 @@ class userForm (models.Model):
     
     def __str__(self):
         return self.name 
-class userEmail(models.Model):
-    email= models.CharField(max_length=1000)
-
-    def __str__(self):
-        return self.email
 
    

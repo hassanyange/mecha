@@ -3,7 +3,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from .models import userEmail, userForm
+from .models import  userForm
 
 def about(request):
     return render(request, 'about.html')
