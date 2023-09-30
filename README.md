@@ -16,7 +16,7 @@ Mechaworld is a platform aimed at simplifying car services, both nationally and 
 **To get Mechaworld up and running on your local machine, follow these steps:**
 
 1. Clone the Repository
-"git clone https://github.com/your-username/mechaworld.git"
+"git clone https://github.com/hassanyange/mecha.git"
  Set Up the Environment
 
 2.Navigate to the project directory:
