@@ -1,5 +1,5 @@
                                                                  **MECHAWORLD**
-Mechaworld is a platform aimed at simplifying car services, both nationally and globally. Our vision is to make car maintenance and repairs hassle-free for users while providing a powerful tool for service providers to manage their operations efficiently. This project is built using Python, Bootstrap, JavaScript, SCSS, and PowerShell.
+Mechaworld is a platform aimed at simplifying car services, both nationally and globally. Our vision is to make car maintenance and repairs hassle-free for users while providing a powerful tool for service providers to manage their operations efficiently. This project is built using Python, Bootstrap, JavaScript and SCSS.
 
 **Table of Contents**
 -->Installation
