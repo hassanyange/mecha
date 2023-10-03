@@ -23,21 +23,19 @@ $ git clone https://github.com/hassanyange/mecha.git
 
 * Navigate to the project directory:
 ``` sh
-    $ cd mechaworld
+$ cd mecha
 ```
 
 * Install Python dependencies:
-  ```sh
-      $ pip install -r requirements.txt
-```
-
-* Start the Mechaworld app:
-``` sh
-     $ python mecha_app.py runserver
-```
- 
-* Mechaworld should now be running locally. You can access it in your web browser at 
 ```sh
-$ http://localhost:8000
+$ pip install -r requirements.txt
+```
+* Start the mecha_app
+```sh
+$ python mecha_app.py runserver
+```
+* Mechaworld should now be running locally. You can access it in your web browser at
+```sh
+$ http://localhost:8000.
 ```
 
