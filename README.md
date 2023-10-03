@@ -23,7 +23,7 @@ $ git clone https://github.com/hassanyange/mecha.git
 
 * Navigate to the project directory:
 ``` sh
-$ cd mecha
+$ cd mechaworld
 ```
 
 * Install Python dependencies:
