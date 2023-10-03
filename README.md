@@ -1,32 +1,43 @@
-                                                                 **MECHAWORLD**
-Mechaworld is a platform aimed at simplifying car services, both nationally and globally. Our vision is to make car maintenance and repairs hassle-free for users while providing a powerful tool for service providers to manage their operations efficiently. This project is built using Python, Bootstrap, JavaScript and SCSS.
+##  MECHA
+Mecha is a platform aimed at simplifying car services, both nationally and globally. Our vision is to make car maintenance and repairs hassle-free for users while providing a powerful tool for service providers to manage their operations efficiently. 
 
-**Table of Contents**
--->Installation
--->Prerequisites
+## TABLE OF CONTENTS:
+* Installation
+* Prerequisites
 
-**Prerequisites**
-#Python 
-#javascript 
-#scss
-#html
-#PowerShell
-
-
-**To get Mechaworld up and running on your local machine, follow these steps:**
-
-1. Clone the Repository
-"git clone https://github.com/hassanyange/mecha.git"
- Set Up the Environment
-
-2.Navigate to the project directory:
-"cd mechaworld"
-
-3. Install Python dependencies:
-"pip install -r requirements.txt"
+## PREREQUISITES
+* Python
+* javascript
+* scss
+* html
+* PowerShell
 
 
-4. Start the Mechaworld app:
-"python mecha_app.py runserver"
-Mechaworld should now be running locally. You can access it in your web browser at http://localhost:8000.
+# INSTALLATION
+To get Mechaworld up and running on your local machine, follow these steps:
+
+* Clone the Repository
+``` sh
+$ git clone https://github.com/hassanyange/mecha.git
+```
+
+* Navigate to the project directory:
+``` sh
+    $ cd mechaworld
+```
+
+* Install Python dependencies:
+  ```sh
+      $ pip install -r requirements.txt
+```
+
+* Start the Mechaworld app:
+``` sh
+     $ python mecha_app.py runserver
+```
+ 
+* Mechaworld should now be running locally. You can access it in your web browser at 
+```sh
+$ http://localhost:8000
+```
 
